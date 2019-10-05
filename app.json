@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/collect/collect",
+    "pages/driver_details/driver_details",
+    "pages/driver_register/driver_register",
+    "pages/Release/Release",
+    "pages/seek_customer/seek_customer",
+    "pages/find_car/find_car",
+    "pages/product_details/product_details",
+    "pages/car_market/car_market",
+    "pages/car_parts/car_parts",
+    "pages/recruitment/recruitment",
+    "pages/apply_job/apply_job",
+    "pages/others/others",
+    "pages/driving_school/driving_school",
+    "pages/market/market",
+    "pages/partWorkDetail/partWorkDetail",
+    "pages/recruit/recruit",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF5401",
+    "navigationBarTitleText": "峨边车吧",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#000000",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#fffff",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "img/shouye.png",
+      "selectedIconPath": "img/shouye1.png"
+    },
+    {
+      "pagePath": "pages/logs/logs",
+      "text": "司机录",
+      "iconPath": "img/addressList.png",
+      "selectedIconPath": "img/addressList1.png"
+    },
+    {
+      "pagePath": "pages/Release/Release",
+      "text": "发布",
+      "iconPath": "img/Release.png",
+      "selectedIconPath": "img/Release1.png"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "text": "我的",
+      "iconPath": "img/my.png",
+      "selectedIconPath": "img/my1.png"
+    }]
+  },
+  "usingComponents": {
+    "c-tab-control": "/components/c-tab-control/c-tab-control",
+    "c-driver": "/components/c-driver/c-driver",
+    "c-tabbar": "/components/c-tabbar/c-tabbar"
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

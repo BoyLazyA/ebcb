@@ -1,0 +1,19 @@
+<!--pages/collect/collect.wxml-->
+<c-tab-control titles="{{['司机录','商品']}}" bind:itemclick="handleitemclick"/>
+<swiper current="{{currentData}}" class='swiper2' style="height:600px;" duration="300">
+  <view style='height:10px;'></view>
+    <swiper-item>
+      <view id='car-list'>
+      <view class='list-item'>
+        <!-- <view class='list-item' wx:for="{{carlist}}" wx:for-item="car" wx:key="{{car.id}}"> -->
+        <c-driver bind:pageturn="turn" data-driver="{{driver}}"/>
+      </view>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view class='list-item'>
+        
+      </view>
+    </swiper-item>
+</swiper>

@@ -1,0 +1,29 @@
+<view class='head'>
+  <text class='title'>{{job.title}}</text>
+  <view class='others'>
+    <text class='wage'>{{job.wage}} </text>
+    <text class='visit'>999次浏览</text> 
+    <view class='date'>2019-06-05</view>
+  </view>
+  <text class='tips'>Tips:警惕所有要收费或者与工作内容不符的兼职！</text>
+</view>
+<view class='body'>
+  <view class='ul'>
+    <view class='bigTitle'>工作内容</view>
+    <text class='text'>工作内容：{{job.content}}</text>
+    <text class='text'>工作要求：{{job.demand}}</text>
+    <text class='text'>工作待遇：{{job.wage}}</text>
+  </view>
+  <view class='ul'>
+    <view class='bigTitle'>工作时间</view>
+    <text class='text'>工作时间：{{job.date}}</text>
+  </view>
+  <view class='ul'>
+    <view class='bigTitle'>工作地点</view>
+    <text class='text'>工作地点：{{job.address}}</text>
+  </view>
+  <view class='ul'>
+    <view class='bigTitle'>报名方式</view>
+    <text class='text'>报名方式：{{job.apply}}</text>
+  </view>
+</view>

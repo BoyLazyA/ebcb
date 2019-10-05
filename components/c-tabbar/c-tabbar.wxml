@@ -1,0 +1,26 @@
+<!--components/c-tabbar/c-tabbar.wxml-->
+<view class="phone_img">
+  <image class="call" src="../../img/call.png"></image>
+</view>
+<view class="tabbar">
+  <view class="left item" bind:tap="toinform">
+    <view class="tb">
+      <image  class="like_img" src="../../img/inform.png"/>
+    </view>
+    <text>举报</text>
+  </view>
+  <view class="left item" bind:tap="toshare">
+    <view class="tb">
+      <image  class="like_img" src="../../img/share.png"/>
+    </view>
+    <text>分享</text>
+  </view>
+  <view class="left item" bind:tap="addfavorite" >
+    <view class="tb">
+      <image wx:if="{{isAdd%2 ==0}}" class="like_img" src="../../img/save.png"/>
+      <image wx:else class="like_img" src="../../img/save1.png"/>
+    </view>
+    <text>收藏</text>
+  </view>
+  <view class="right item">联系ta</view>
+</view>

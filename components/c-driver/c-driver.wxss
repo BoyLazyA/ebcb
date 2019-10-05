@@ -1,0 +1,86 @@
+.driver{
+  width: 750rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10rpx;
+  background: white;
+  border-radius: 15rpx;
+  font-size: 1.1em;
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60%;
+}
+.driver_img{
+  width: 15%;
+  height: 100%;
+  padding: 18rpx 0 0 13rpx;
+}
+.d_img{
+  width: 70%;
+  height: 70%;
+  border-radius: 40rpx;
+}
+.driver_body{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+}
+.class{
+  width: 100%;
+  height: 50%;
+  padding-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.driver_phone_img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.connect{
+  height: 100%;
+  width: 15%;
+}
+.connect_img{
+  padding-top: 30rpx;
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40%;
+  padding-top: 20rpx;
+}
+.address{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.address_img{
+  width: 12%;
+  height: 90%;
+}
+.add_img{
+  padding-left: 15rpx;
+  width: 50%;
+  height: 50%;
+}
+.content{
+  width: 88%;
+  font-size: 0.9em;
+  
+}
+.car_type{
+  width: 30%;
+  font-size: 0.9em;
+}

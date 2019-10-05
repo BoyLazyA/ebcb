@@ -1,0 +1,34 @@
+
+<c-tab-control titles="{{['招聘信息','需求信息']}}" bind:itemclick="handleitemclick"/>
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300">
+  <swiper-item>
+    <view class='ul'>
+
+      <view class='li' wx:for="{{joblist}}" wx:for-item="job" wx:key="{{job.id}}">
+        <view class='left_text'>
+          <view class='active_introduce'  bindtap='gotodetails' data-id='{{job.id}}'>{{job.title}}</view>
+          <view class='active_address'>{{job.address}}</view>
+        </view>
+        <view class='right'>{{job.wage}}</view>
+      </view>
+
+    </view>
+  </swiper-item> 
+
+  <swiper-item>
+    <view class='job_seeker'>
+      <view class='seeker_img'>
+        <image src="../../img/g3.jpg" class="jobseeker_img"></image>
+      </view>
+      <view class='seeker_information'>
+        <view class='position phone'>需求名称</view>
+        <view class="class phone">
+          <image class="driver_phone_img" src="../../img/phone.png"></image>
+          <text style="font-size:0.8em;">156983373359</text>
+        </view>
+      </view>
+    </view>
+    <view class='skill'>技能或经验：青年是时代的晴雨表，也是国家发展建设的生力军。进入新时代，“实力爱国”的中国青年一定是中华民族生气勃发、</view>
+  </swiper-item>
+</swiper>
+

@@ -1,0 +1,81 @@
+<swiper class='swiper1'
+        circular
+        autoplay
+        interval='4000'
+        duration='300'
+        indicator-dots
+        indicator-active-color='#ff5777'>
+  <block wx:for="{{swiperim}}" wx:for-key="item" wx:key="{{index}}">
+    <swiper-item  class="swiper-item">
+      <image src="{{item}}" mode="widthFix" bind:tap="previewimg" data-src="{{item}}"/>
+    </swiper-item>
+  </block>
+</swiper> 
+<!-- ----------- -->
+<view class="top">
+  <view class="pro_type">奥迪 奔驰 宝马 路虎</view>
+  <view class="price_date">
+    <view class="price">【售价】 <text style="color:red;">三千元</text></view>
+    <view class="price">发布日期:2019-10-1</view>
+  </view>
+</view>
+<!-- ----------- -->
+<view style="height:15rpx;"></view>
+<view class="information">
+  <view class="title">
+    <view style="background:rgb(11,194,174);height:29rpx;width:9rpx;margin:0 20rpx;"></view>
+    <text>基本信息</text>
+  </view>
+  <view class="content">
+    <view class="left">
+      <view class="up">购买日期</view>
+      <text class="down">dfdadf</text>
+    </view>
+    <view class="left">
+      <view class="up">{{one}}</view>
+      <text class="down" >dfdadf</text>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="left">
+      <view class="up">{{two}}</view>
+      <text class="down">dfdadf</text>
+    </view>
+    <view class="left">
+      <view class="up">{{three}}</view>
+      <text class="down" >dfdadf</text>
+    </view>
+  </view>
+</view>
+<!-- ----------- -->
+<view style="height:15rpx;"></view>
+<view class='flex-wrp-row item'>
+  <view class='item-left flex-wrp-row'>
+    <text class='text' style="font-size:0.9em;font-weight:lighter;">详细地址</text>
+  </view>
+</view>
+<view style="height:1rpx;"></view>
+<view class='flex-wrp-row item'>
+  <view class='item-left flex-wrp-row'>
+    <image class="add_img" src="../../img/gis1.png"></image>
+    <text style="padding-left:22rpx;">新林镇黄泥村一组</text>
+  </view>
+</view>
+
+<view class='flex-wrp ite'>
+  <view class='item-lef flex-wrp'>
+    <text class='text' style="font-size:0.9em;font-weight:lighter;">{{four}}介绍</text>
+  </view>
+</view>
+<view style="height:1rpx;"></view>
+<view class='flex-wrp ite'>
+  <view class='remarks item-lef'>
+    <text style="line-height:17rpx;font-weight:lighter;">新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组</text>
+  </view>
+</view>
+
+<view style="height:80rpx;"></view>
+<c-tabbar bind:addfavor="addfavorite" bind:toinform="toinform" bind:toshare="toshare" class="addfavor"/>
+
+

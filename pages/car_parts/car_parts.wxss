@@ -1,0 +1,30 @@
+.choose_item{
+  background: white;
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 10rpx;
+}
+.choose_img{
+  height: 85%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_style{
+  width: 90%;
+  height: 90%;
+}
+
+.all{
+  width: 750rpx;
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+.show_img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

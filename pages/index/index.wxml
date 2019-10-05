@@ -1,0 +1,126 @@
+<swiper class='swiper1'
+        circular
+        autoplay
+        interval='3000'
+        duration='300'
+        indicator-dots
+        indicator-active-color='#ff5777'>
+  <block wx:for="{{swiperim}}" wx:key="{{index}}">
+    <swiper-item  class="swiper-item">
+      <image src="{{item}}" mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view style='height:16rpx;'></view>
+
+<view class='btn'>
+  <view class="per_btn">
+    <button size='mini' bindtap='intopartjob' data-current='1' class="bton">
+      <image class='btnimage' src='../../img/truck.png'></image>
+    </button>
+    <text class="text">其他车型</text>
+  </view>
+  <view class="per_btn">
+    <button size='mini' bindtap='intopartjob' data-current='2'  class="bton">
+      <image class='btnimage' src='../../img/car_market.png'></image>
+    </button>
+    <text  class="text">二手车市场</text>
+  </view>
+  <view class="per_btn">
+    <button size='mini' bindtap='intopartjob' data-current='3' class="bton">
+      <image class='btnimage' src='../../img/driving_school.png'></image>
+    </button>
+    <text class="text">驾校</text>
+  </view>
+  <view class="per_btn">
+    <button size='mini' bindtap='intopartjob' data-current='4' class="bton">
+      <image class='btnimage' src='../../img/job.png'></image>
+    </button>
+    <text class="text">需求&招聘</text>
+  </view>
+</view>
+<view style='height:15rpx;'></view>
+
+<view class='bottom'>
+  <c-tab-control titles="{{['车找人','人找车']}}" bind:itemclick="handleitemclick"/>
+  <swiper current="{{currentData}}" class='swiper2' style="height:600px;" duration="300">
+    <swiper-item>
+      <block wx:for="{{find_person}}" wx:for-item="per" wx:key="{{per.phone}}">
+        <view class='list-item' >
+          <view class="first_second">
+            <view class='start'> 
+              <text style="color:rgb(51,255,51);font-size:1em;">起点</text>
+               ：{{per.start_address}}
+            </view>
+            <view class="date">19:00</view>
+          </view>
+          <view class="first_second">
+            <view class='end'> 
+              <text style="color:rgb(255,0,0);font-size:1em;">终点</text>
+               ：{{per.end_address}}
+            </view>
+            <view class="right"><view class="confirm">未认证</view></view>
+          </view>
+          <view style="height:2rpx;background:rgb(240, 240, 240);"></view>
+          <view class='third_part'>
+            <view class='driver_poster'>
+              <image class='driver_img' src="{{per.driver_img}}"></image>
+              <view class='driver_name'>{{per.driver_name}}</view>
+            </view>
+            <view class='third_body'>
+              <view class='body'>
+                <view class='start_time'>出发时间：{{per.start_time}}</view>
+                <view class='seats_number'>还有 <text style="color:orange;">{{per.num_seats}}</text> 个座位</view>
+              </view>
+              <view class="connect"><image class="connect_img"></image></view>
+            </view>
+          </view>
+          <view style="height:1rpx;background:rgb(240, 240, 240);"></view>
+          <view class='remarks'>备注：{{per.remarks}}</view>
+        </view>
+        <view style="height:10rpx;background: rgb(236, 240, 240);padding-bottom:0rpx;margin-bottom:0;"></view>
+      </block>
+      
+    </swiper-item>
+      
+    <swiper-item>
+      <block wx:for="{{find_person}}" wx:for-item="per" wx:key="{{per.phone}}">
+        <view class='list-item' >
+          <view class="first_second">
+            <view class='start'> 
+              <text style="color:rgb(51,255,51);font-size:1em;">起点</text>
+               ：{{per.start_address}}
+            </view>
+            <view class="date">19:00</view>
+          </view>
+          <view class="first_second">
+            <view class='end'> 
+              <text style="color:rgb(255,0,0);font-size:1em;">终点</text>
+               ：{{per.end_address}}
+            </view>
+            <view class="right"><view class="confirm">未认证</view></view>
+          </view>
+          <view style="height:2rpx;background:rgb(240, 240, 240);"></view>
+          <view class='third_part'>
+            <view class='driver_poster'>
+              <image class='driver_img' src="{{per.driver_img}}"></image>
+              <view class='driver_name'>{{per.driver_name}}</view>
+            </view>
+            <view class='third_body'>
+              <view class='body'>
+                <view class='start_time'>出发时间：{{per.start_time}}</view>
+                <view class='seats_number'>还有 <text style="color:orange;">{{per.num_seats}}</text> 个座位</view>
+              </view>
+              <view class="connect"><image class="connect_img"></image></view>
+            </view>
+          </view>
+          <view style="height:1rpx;background:rgb(240, 240, 240);"></view>
+          <view class='remarks'>备注：{{per.remarks}}</view>
+        </view>
+        <view style="height:10rpx;background: rgb(236, 240, 240);padding-bottom:0rpx;margin-bottom:0;"></view>
+      </block>
+    </swiper-item>
+  </swiper>
+</view>
+

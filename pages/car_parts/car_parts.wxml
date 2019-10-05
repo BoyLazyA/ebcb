@@ -1,0 +1,32 @@
+<form bindsubmit="save">
+  <view class='requaire'>填写车零部件信息</view>
+  <view class='fillin'>
+    <view class='choose'>零件名称： <input name='part_name'></input></view>
+    <view class='choose'>购买日期： <input name='buy_date'></input></view>
+    <view class='choose'>原属车型： <input name='car_part'></input></view>
+    <view class='choose'>零件型号： <input name='part_type'></input></view>
+    <view class='choose'>售价： <input name='price'></input></view>
+    <view class='choose'>地址： <input name='part_address' placeholder="填写零件所在地址"></input></view>
+    <view class='choose'>联系电话： <input name='phone'></input></view>
+  </view>
+  <view class='requaire'>备注</view>
+  <textarea placeholder='选填(如一些要求或者必要说明和提醒）' class='remark' name='remarks'></textarea>
+
+  <view class='requaire'>上传零件图片</view>
+  <view class="all">
+    <view wx:if="{{tempFilePaths == ''}}"></view>
+    <view  wx:else class="show_img">
+      <view class="choose_item" wx:for="{{tempFilePaths}}" wx:key="{{index}}">
+        <image src="{{item}}" class="img_style"></image>
+      </view>
+    </view>
+    <view class='choose_item' bind:tap="chooseimg">
+      <view class='choose_img'>
+        <image src='../../img/add.png' class='img_style'></image>
+      </view>
+    </view>
+  </view>
+  
+  <view style="height:60px;"></view>
+  <button form-type='submit' type='primary'>提 交</button> 
+</form>

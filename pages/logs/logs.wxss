@@ -1,0 +1,4 @@
+page{
+  background: rgb(236, 240, 240);
+}
+.swiper2{width: 100%;}

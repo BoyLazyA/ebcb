@@ -1,0 +1,46 @@
+#mylogin{
+  background-color: #328eeb;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#myicon{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+#nickname{
+  color: white;
+}
+
+
+.flex-wrp-row {
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  padding: 20rpx;
+  position: relative;
+  height: 80rpx;
+  width: 750rpx;
+  background: white;
+}
+.item-left {
+   flex: 1; 
+   align-items:center;
+}
+.item-right {
+  position: relative;
+  align-items:center;
+}
+.text{
+  margin-right: 40rpx;
+}
+.go_img{
+  padding-top: 10rpx;
+  height: 40rpx;
+  width: 40rpx;
+}
+

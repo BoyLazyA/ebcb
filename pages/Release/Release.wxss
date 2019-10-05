@@ -1,0 +1,45 @@
+page{
+  background: rgb(246, 248, 248);
+}
+.ad_img{
+  width: 100%;
+  height: 170px;
+}
+.choose{
+  width: 100%;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+}
+.choose_style{
+  width: 100%;
+  height: 33%;
+  display: flex;
+  flex-direction: row;
+}
+.choose_item{
+  background: white;
+  width: 50%;
+  height: 130px;
+  margin: 6px 15px;
+  padding: 0;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.choose_img{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_style{
+  width: 60px;
+  height: 40px;
+}
+.choose_text{
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+}

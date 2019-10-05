@@ -1,0 +1,92 @@
+<view class="remind" style="font-size:0.9em; color:red;">您的信息仅用于平台审核</view>
+
+<form bindsubmit="register">
+  <view class='topTabSwiper'>
+    <view class='tab tabBorer' >
+      <image src="../../img/step1.png" class="step_img"></image>
+      <text>填写身份信息</text>
+    </view>
+    <view class='tab  {{currentData < 1 ? "" : "tabBorer"}}' >
+      <image src='{{currentData == 0 ? "../../img/step.png" : "../../img/step1.png"}}' class="step_img"></image>
+      <text>填写车辆信息</text>
+    </view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}' >
+      <image src='{{currentData > 1 ? "../../img/step1.png" : "../../img/step.png"}}' class="step_img"></image>
+      <text>上传证件</text>
+    </view>
+  </view>
+  <swiper current="{{currentData}}" class='swiper2' style="height:600px;" duration="300" bindchange="bindchange">
+    <view style="height:40px;"></view>
+    <swiper-item>
+      <view class='choose'>车主姓名： <input name='driver_name'></input></view>
+      <view class='choose'>车主性别： <input name='driver_sex'></input></view>
+      <view class='choose'>手机号码： <input name='driver_phone'></input></view>
+      <view class='choose'>常在地址： <input name='driver_address' placeholder="只需给出镇，村名"></input></view>
+      <view style="height:60px;"></view>
+      <button data-current = "1" bindtap='checkCurrent' type="primary">下一步</button>
+    </swiper-item>
+    <swiper-item>
+      <view class='choose'>车牌号： <input name='car_number'></input></view>
+      <view class='choose'>汽车颜色： <input name='car_color'></input></view>
+      <view class='choose'>车辆注册日期： <input name='car_date'></input></view>
+      <view class='choose'>汽车车型：
+        <radio-group class="radio-group" bindchange="radioChange">
+          <label class="radio" wx:for="{{car_type_items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+        </radio-group>
+      </view>
+      <view class='choose_new'>常跑路线：
+        <radio-group class="radio-group" bindchange="radioChange" style="font-size:0.9em;padding-top:10rpx;">
+          <label class="radio" wx:for="{{route}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+            </label>
+        </radio-group>
+      </view>
+      <view style="height:40px;"></view>
+      <button data-current = "2" bindtap='checkCurrent' type="primary">下一步</button>
+      <view style="height:20px;"></view>
+      <button data-current = "0" bindtap='checkCurrent' type="primary" >上一步</button>
+    </swiper-item>
+    <swiper-item>
+      <view class='all_choose'>
+        <view class="choose_style">
+          <view class='choose_item' bind:tap="chooseimg" data-current="1">
+            <view class='choose_text'>本人驾驶证</view>
+            <view class='choose_img'>
+              <image wx:if="{{tempFilePaths[0].driver_license == ''}}" src='../../img/add.png' class='img_style'></image>
+              <image wx:else class='img_style' src="{{tempFilePaths[0].driver_license}}"></image>
+            </view>
+          </view>
+          <view class='choose_item' bind:tap="chooseimg" data-current="2">
+            <view class='choose_text'>车辆行驶证</view>
+            <view class='choose_img'>
+              <image wx:if="{{tempFilePaths[0].car_license == ''}}" src='../../img/add.png' class='img_style'></image>
+              <image wx:else class='img_style' src="{{tempFilePaths[0].car_license}}"></image>
+            </view>
+          </view>
+        </view>
+        <view class="choose_style">
+          <view class='choose_item' bind:tap="chooseimg" data-current="3">
+            <view class='choose_text'>身份证（正面）</view>
+            <view class='choose_img'>
+              <image wx:if="{{tempFilePaths[0].id_front == ''}}" src='../../img/add.png' class='img_style'></image>
+              <image wx:else class='img_style' src="{{tempFilePaths[0].id_front}}"></image>
+            </view>
+          </view>
+          <view class='choose_item' bind:tap="chooseimg" data-current="4">
+            <view class='choose_text'>身份证（反面）</view>
+            <view class='choose_img'>
+              <image wx:if="{{tempFilePaths[0].id_reverse == ''}}" src='../../img/add.png' class='img_style'></image>
+              <image wx:else class='img_style' src="{{tempFilePaths[0].id_reverse}}"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <button data-current = "1" bindtap='checkCurrent' type="primary">上一步</button>
+      <view style="height:25px;"></view>
+      <button type="primary" form-type="submit">提交审核</button>
+    </swiper-item>
+  </swiper>
+</form>

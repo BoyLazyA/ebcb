@@ -1,0 +1,78 @@
+
+.remind{
+  float: left; 
+  width: 100%;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.tab{
+  float: left; 
+  width: 33%;
+  padding: 10rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.step_img{
+  float: left; 
+  
+  height: 50rpx;
+  width: 60rpx;
+}
+text{
+  padding-top: 10px;
+  font-size: 0.7em;
+}
+
+.topTabSwiper{ zoom: 1;}
+.topTabSwiper:after{content: ""; clear: both;display: block;}
+.tabBorer{border-bottom: 1px solid rgb(18, 150, 219); color: rgb(18, 150, 219);}
+.swiper2{width: 100%;}
+
+
+page{
+  background: rgb(246, 248, 248);
+}
+
+.all_choose{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+}
+.choose_style{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.choose_item{
+  background: white;
+  width: 50%;
+  height: 300rpx;
+  margin: 30rpx;
+  border-radius: 15px;
+}
+.choose_img{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_style{
+  width: 60%;
+  height: 60%;
+}
+.choose_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.choose_new{
+  border-bottom: 0.5rpx dashed gray;
+  display: flex;
+  flex-direction: column;
+  padding: 25rpx 0px;
+}

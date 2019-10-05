@@ -1,0 +1,112 @@
+.swiper-item image {
+  width: 100%;
+}
+.top{
+  height: 180rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.pro_type{
+  width: 100%;
+  padding: 0 20rpx;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+}
+.price_date{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.price{
+  width: 55%;
+  height: 100%;
+  font-size: 0.9em;
+  padding-left: 10rpx;
+}
+.information{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+.title{
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  height: 120rpx;
+}
+.left{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx 15rpx;
+}
+.up{
+  font-size:0.8em;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+.down{
+  display: flex;
+  align-items: center;
+  font-weight:bold;
+}
+
+.flex-wrp-row {
+  display: flex;
+  flex-direction: row;
+}
+.item {
+  padding: 20rpx;
+  position: relative;
+  height: 65rpx;
+  width: 750rpx;
+  background: white;
+}
+.item-left {
+   flex: 1; 
+   align-items:center;
+}
+.text{
+  margin-right: 40rpx;
+}
+.double{
+  height: 25rpx;
+  width: 60rpx;
+}
+.add_img{
+  width: 30rpx;
+  height: 39rpx;
+}
+
+
+.flex-wrp{
+  display: flex;
+  flex-direction: row;
+}
+.ite{
+  padding: 20rpx;
+  position: relative;
+  width: 750rpx;
+  background: white;
+}
+.item-lef {
+   flex: 1; 
+   align-items:center;
+}
+.remarks{
+  padding:0 40rpx 0 22rpx;
+}

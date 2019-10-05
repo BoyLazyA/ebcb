@@ -1,0 +1,11 @@
+<form bindsubmit="save">
+  <view class='requaire'>填写个人需求信息</view>
+  <view class='fillin'>
+    <view class='choose'>需求主题名称： <input name='title'></input></view>
+    <view class='choose'>联系电话： <input name='phone'></input></view>
+  </view>
+  <view class='requaire'>需求简述：</view>
+  <textarea placeholder='自己的技能和工作经历' class='remark' name='remarks'></textarea>
+  <view style="height:60px;"></view>
+  <button form-type='submit' type='primary'>提 交</button> 
+</form> 

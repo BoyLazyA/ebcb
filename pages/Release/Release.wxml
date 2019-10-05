@@ -1,0 +1,49 @@
+
+<view>
+  <image class='ad_img' src='../../img/swiper.png' mode='scaleToFill'></image>
+</view>
+ 
+<view class='choose'>
+  <view class='choose_style'>
+    <view class='choose1 choose_item' bindtap='gotorelease' data-current='1'>
+      <view class='choose_img'>
+        <image src='../../img/seek_customer.png' class='img_style'></image>
+      </view>
+      <view class='choose_text'>车找人</view>
+    </view>
+    <view class='choose2 choose_item' bindtap='gotorelease' data-current='2'>
+      <view class='choose_img'>
+        <image src='../../img/find_car.png' class='img_style'></image>
+      </view>
+      <view class='choose_text'>人找车</view>
+    </view>
+  </view>
+  <view class='choose_style'>
+    <view class='choose3 choose_item' bindtap='gotorelease' data-current='3'>
+    <view class='choose_img'>
+        <image src='../../img/sencond_car.png' class='img_style'></image>
+      </view>
+      <view class='choose_text'>二手车</view>
+    </view>
+    <view class='choose4 choose_item' bindtap='gotorelease' data-current='4'>
+      <view class='choose_img'>
+        <image src='../../img/car_parts.png' class='img_style'></image>
+      </view>
+      <view class='choose_text'>车零部件</view>
+    </view>
+  </view>
+  <view class='choose_style'>
+    <view class='choose5 choose_item' bindtap='gotorelease' data-current='5'>
+      <view class='choose_img'>
+        <image src='../../img/recruitment.png' class='img_style'></image>
+      </view>
+      <view class='choose_text'>发布招聘</view>
+    </view>
+    <view class='choose6 choose_item' bindtap='gotorelease' data-current='6'>
+      <view class='choose_img'>
+        <image src='../../img/apply_job.png' class='img_style'></image>
+      </view>
+      <view class='choose_text'>发布需求</view>
+    </view>
+  </view>
+</view>

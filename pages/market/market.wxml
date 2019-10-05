@@ -1,0 +1,58 @@
+
+<c-tab-control titles="{{['完整车','零部件']}}" bind:itemclick="handleitemclick"/>
+<swiper current="{{currentData}}" class='swiper2' style="height:600px;" duration="300" >
+<view style='height:10px;'></view>
+  <swiper-item>
+    <view id='car-list'>
+    <view class='list-item'>
+      <!-- <view class='list-item' wx:for="{{carlist}}" wx:for-item="car" wx:key="{{car.id}}"> -->
+
+      <view class='information' bindtap='gotodetails' data-current='1'>
+        <view class='pro_img'>
+          <image class="p_img" src="../../img/g3.jpg"></image>
+        </view>
+        <view class='item_information'>
+          <view class='item_type'>奥迪 奔驰 宝马</view>
+          <view class="phone">
+            <image class="driver_phone_img" src="../../img/phone.png"></image>
+            <text style="font-size:0.8em;">15983373359</text>
+          </view>
+          <view class="phone">
+            <image class="driver_phone_img" src="../../img/money.png"></image>
+            <text style="font-size:0.9em;color:red;">三千元左右</text>
+          </view> 
+        </view>
+      </view>
+      <view style="background: rgb(236, 240, 240);height:2rpx;"></view>
+      
+    </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class='list-item'>
+      <!-- <view class='list-item' wx:for="{{carlist}}" wx:for-item="car" wx:key="{{car.id}}"> -->
+
+      <view class='information' bindtap='gotodetails' data-current='2'>
+        <view class='pro_img'>
+          <image class="p_img" src="../../img/g3.jpg"></image>
+        </view>
+        <view class='item_information'>
+          <view class='item_type'>三轮车发动机250</view>
+          <view class="phone">
+            <image class="driver_phone_img" src="../../img/phone.png"></image>
+            <text style="font-size:0.8em;">15983373359</text>
+          </view>
+          <view class="phone">
+            <image class="driver_phone_img" src="../../img/money.png"></image>
+            <text style="font-size:0.9em;color:red;">三千元左右</text>
+          </view> 
+        </view>
+      </view>
+      <view style="background: rgb(236, 240, 240);height:2rpx;"></view>
+
+    </view>
+  </swiper-item>
+
+</swiper>
+

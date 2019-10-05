@@ -1,0 +1,72 @@
+page{
+  background: #eee;
+}
+.head{
+  height: 230rpx;
+  width: 740rpx;
+  padding: 20rpx 20rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15rpx;
+}
+.title{
+  height: 50%;
+  width: 100%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.others{
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.tips{
+  height: 20%;
+  width: 100%;
+  font-size: 0.8em;
+  color: rgb(244, 140, 20);
+}
+.wage{
+  color: rgb(255, 109, 18);
+  width: 25%;
+  height: 100%;
+}
+.visit{
+  padding: 10rpx 0;
+  width: 49%;
+  height: 100%;
+  font-size: 0.8em;
+  font-weight: lighter;
+}
+.date{
+  width: 26%;
+  height: 100%;
+  font-size: 0.9em;
+}
+
+.body{
+  width: 740rpx;
+  padding: 20rpx 20rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.ul{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 10rpx;
+
+}
+.bigTitle{
+  width: 100%;
+  height: 60rpx;
+  font-size: 1.1em;
+  color: rgb(255, 40, 208);
+}
+.text{
+  margin: 3rpx;
+  font-weight: lighter;
+  font-size: 0.9em;
+}

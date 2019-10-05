@@ -1,0 +1,94 @@
+<!--pages/driver_details/driver_details.wxml-->
+<view>
+  <image class='ad_img' src='../../img/swiper.png' mode='scaleToFill'></image>
+</view>
+
+<view class="driver">
+  <view class="driver_img">
+    <image class="d_img" src="../../img/g3.jpg"></image>
+  </view>
+  <view class="driver_body">
+    <view class="name">大司机</view>
+    <view class="sex_date">
+      <view class="sex">
+        <view class="male_info">男士</view>
+      </view>
+      <view class="date">入驻时间：2019-9-30</view>
+    </view>
+  </view>
+</view>
+<!-- -------------- -->
+<view style="height:25rpx;"></view>
+
+<view class='flex-wrp-row item'>
+  <view class='item-left flex-wrp-row'>
+    <text class='text'>电话</text>
+  </view>
+  <view class='item-right flex-wrp-row'>
+    <text class='text'>15983373359</text>
+  </view>
+</view>
+<view style="height:1rpx;"></view>
+<view class='flex-wrp-row item'>
+  <view class='item-left flex-wrp-row'>
+    <text class='text'>常跑路线</text>
+  </view>
+  <view class='item-right flex-wrp-row'>
+    <view class="route text" wx:if="{{sign ==1}}">成都 <image src="../../img/double.png" class="double"/> 峨边</view>
+    <view class="route text" wx:elif="{{sign ==2}}">乐山
+      <image src="../../img/double.png" class="double"/> 峨边</view>
+    <view class="route text" wx:else>提供包车服务</view>
+  </view>
+</view>
+<!-- -------------- -->
+<view style="height:20rpx;"></view>
+
+<view class='flex-wrp-row item'>
+  <view class='item-left flex-wrp-row'>
+    <text class='text' style="font-size:0.9em;font-weight:lighter;">详细地址</text>
+  </view>
+</view>
+<view style="height:1rpx;"></view>
+<view class='flex-wrp-row item'>
+  <view class='item-left flex-wrp-row'>
+    <image class="add_img" src="../../img/gis1.png"></image>
+    <text style="padding-left:22rpx;">新林镇黄泥村一组</text>
+  </view>
+</view>
+<!-- -------------- -->
+<view style="height:20rpx;"></view>
+
+<view class='flex-wrp ite'>
+  <view class='item-lef flex-wrp'>
+    <text class='text' style="font-size:0.9em;font-weight:lighter;">车主介绍</text>
+  </view>
+</view>
+<view style="height:1rpx;"></view>
+<view class='flex-wrp ite'>
+  <view class='remarks item-lef'>
+    <text style="line-height:17rpx;font-weight:lighter;">新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组新林镇黄泥村一组</text>
+  </view>
+</view>
+<!-- -------------- -->
+<view style="height:20rpx;"></view>
+
+<view class='flex-wrp ite'>
+  <view class='item-lef flex-wrp'>
+    <text class='text' style="font-size:0.9em;font-weight:lighter;">相关图片</text>
+  </view>
+</view>
+<view style="height:1rpx;"></view>
+<view class='flex-wrp ite'>
+  <view class='remarks item-lef'>
+    <block wx:for="{{swiperim}}" wx:key="{{index}}">
+      <image src="{{item}}" class="r_img" mode="widthFix"/>
+    </block>
+  </view>
+</view>
+
+
+<view style="height:80rpx;"></view>
+<c-tabbar bind:addfavor="addfavorite" bind:toinform="toinform" bind:toshare="toshare" class="addfavor"/>
+
+
+

@@ -1,0 +1,52 @@
+.phone_img{
+  height: 75rpx;
+  width: 75rpx;
+  background: white;
+  display: flex;
+  position: fixed;
+  bottom: 120rpx;
+  right: 40rpx;
+}
+.call{
+  height: 100%;
+  width: 100%;
+}
+
+.tabbar{
+  height: 75rpx;
+  width: 750rpx;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0rpx;
+  font-size: 0.9em;
+}
+.item{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  width: 45%;
+  background: rgb(0,191,255);
+}
+.left{
+  width: 18.4%;
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+}
+.tb{
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.like_img{
+  width: 30rpx;
+  height: 28rpx;
+}

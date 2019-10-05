@@ -1,0 +1,15 @@
+<form bindsubmit="save">
+  <view class='requaire'>填写招聘信息</view>
+  <view class='fillin'>
+    <view class='choose'>招聘岗位名称： <input name='title'></input></view>
+    <view class='choose'>薪资安排： <input name='wage'></input></view>
+    <view class='choose'>工作内容： <input name='content'></input></view>
+    <view class='choose'>工作时间： <input name='date'></input></view>
+    <view class='choose'>工作地点： <input name='address'></input></view>
+    <view class='choose'>报名方式： <input name='apply'></input></view>
+  </view>
+  <view class='requaire'>招聘要求</view>
+  <textarea placeholder='一些要求或者必要说明和提醒' class='remark' name='demand'></textarea>
+  <view style="height:60px;"></view>
+  <button form-type='submit' type='primary'>提 交</button> 
+</form>
