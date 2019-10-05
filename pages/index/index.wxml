@@ -47,39 +47,41 @@
   <swiper current="{{currentData}}" class='swiper2' style="height:600px;" duration="300">
     <swiper-item>
       <block wx:for="{{find_person}}" wx:for-item="per" wx:key="{{per.phone}}">
-        <view class='list-item' >
-          <view class="first_second">
-            <view class='start'> 
-              <text style="color:rgb(51,255,51);font-size:1em;">起点</text>
-               ：{{per.start_address}}
-            </view>
-            <view class="date">19:00</view>
-          </view>
-          <view class="first_second">
-            <view class='end'> 
-              <text style="color:rgb(255,0,0);font-size:1em;">终点</text>
-               ：{{per.end_address}}
-            </view>
-            <view class="right"><view class="confirm">已认证</view></view>
-          </view>
-          <view style="height:2rpx;background:rgb(240, 240, 240);"></view>
-          <view class='third_part'>
-            <view class='driver_poster'>
-              <image class='driver_img' src="{{per.driver_img}}"></image>
-              <view class='driver_name'>{{per.driver_name}}</view>
-            </view>
-            <view class='third_body'>
-              <view class='body'>
-                <view class='start_time'>出发时间：{{per.start_time}}</view>
-                <view class='seats_number'>还有 <text style="color:orange;">{{per.num_seats}}</text> 个座位</view>
+        <view bind:tap="gotoconnect">
+          <view class='list-item' >
+            <view class="first_second">
+              <view class='start'> 
+                <text style="color:rgb(51,255,51);font-size:33rpx;">起点</text>
+                ：{{per.start_address}}
               </view>
-              <view class="connect"><image class="connect_img"></image></view>
+              <view class="date">19:00</view>
             </view>
+            <view class="first_second">
+              <view class='end'> 
+                <text style="color:rgb(255,0,0);font-size:33rpx;">终点</text>
+                ：{{per.end_address}}
+              </view>
+              <view class="right"><view class="confirm">已认证</view></view>
+            </view>
+            <view style="height:2rpx;background:rgb(240, 240, 240);"></view>
+            <view class='third_part'>
+              <view class='driver_poster'>
+                <image class='driver_img' src="{{per.driver_img}}"></image>
+                <view class='driver_name'>{{per.driver_name}}</view>
+              </view>
+              <view class='third_body'>
+                <view class='body'>
+                  <view class='start_time'>出发时间：{{per.start_time}}</view>
+                  <view class='seats_number'>还有 <text style="color:orange;">{{per.num_seats}}</text> 个座位</view>
+                </view>
+                <view class="connect"><image class="connect_img"></image></view>
+              </view>
+            </view>
+            <view style="height:1rpx;background:rgb(240, 240, 240);"></view>
+            <view class='remarks'>备注：{{per.remarks}}</view>
           </view>
-          <view style="height:1rpx;background:rgb(240, 240, 240);"></view>
-          <view class='remarks'>备注：{{per.remarks}}</view>
+          <view style="height:10rpx;background: rgb(236, 240, 240);padding-bottom:0rpx;margin-bottom:0;"></view>
         </view>
-        <view style="height:10rpx;background: rgb(236, 240, 240);padding-bottom:0rpx;margin-bottom:0;"></view>
       </block>
       
     </swiper-item>
@@ -89,14 +91,14 @@
         <view class='list-item' >
           <view class="first_second">
             <view class='start'> 
-              <text style="color:rgb(51,255,51);font-size:1em;">起点</text>
+              <text style="color:rgb(51,255,51);font-size:33rpx;">起点</text>
                ：{{per.start_address}}
             </view>
             <view class="date">19:00</view>
           </view>
           <view class="first_second">
             <view class='end'> 
-              <text style="color:rgb(255,0,0);font-size:1em;">终点</text>
+              <text style="color:rgb(255,0,0);font-size:33rpx;">终点</text>
                ：{{per.end_address}}
             </view>
             <view class="right"><view class="confirm">未认证</view></view>

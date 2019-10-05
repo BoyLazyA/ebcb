@@ -14,20 +14,19 @@ page{
 }
 .requaire{
   height: 30px;
-  padding-top: 18px;
-  margin-left: 10px;
+  padding-top: 36rpx;
+  margin-left: 20rpx;
   font-weight: lighter;
-  font-size: 0.8em;
+  font-size: 30rpx;
 }
 .remark{
   width: 100%;
   height: 120px;
   background: white;
-  padding-left: 10px;
+  padding-left: 20rpx;
 }
 .fillin{
-  background: white;
-  padding-left: 10px;
+  padding-left: 20rpx;
 }
 .choose{
   display: flex;

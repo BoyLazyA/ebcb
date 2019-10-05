@@ -52,7 +52,7 @@
 <view style="height:15rpx;"></view>
 <view class='flex-wrp-row item'>
   <view class='item-left flex-wrp-row'>
-    <text class='text' style="font-size:0.9em;font-weight:lighter;">详细地址</text>
+    <text class='text' style="font-size:31rpx;font-weight:lighter;">详细地址</text>
   </view>
 </view>
 <view style="height:1rpx;"></view>
@@ -65,7 +65,7 @@
 
 <view class='flex-wrp ite'>
   <view class='item-lef flex-wrp'>
-    <text class='text' style="font-size:0.9em;font-weight:lighter;">{{four}}介绍</text>
+    <text class='text' style="font-size:31rpx;font-weight:lighter;">{{four}}介绍</text>
   </view>
 </view>
 <view style="height:1rpx;"></view>

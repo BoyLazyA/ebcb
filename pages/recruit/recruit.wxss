@@ -22,7 +22,7 @@
 }
 .active_introduce{
   height: 70%;
-  font-size: 1.2em;
+  font-size: 36rpx;
   width: 100%;
   padding-top: 30rpx;
   overflow: hidden;
@@ -31,7 +31,7 @@
 .active_address{
   height: 30%;
   width: 100%;
-  font-size: 0.8em;
+  font-size: 30rpx;
 }
 .right{
   color: rgb(255, 100, 15);

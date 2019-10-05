@@ -1,4 +1,4 @@
-<view class="remind" style="font-size:0.9em; color:red;">您的信息仅用于平台审核</view>
+<view class="remind" style="font-size:31rpx; color:red;">您的信息仅用于平台审核</view>
 
 <form bindsubmit="register">
   <view class='topTabSwiper'>
@@ -51,7 +51,7 @@
       </view>
       <view style="height:20rpx;"></view>
       <view class='choose_new'>常跑路线：
-        <radio-group class="radio-group radio-group-new" bindchange="radioChange" style="font-size:0.9em;padding-top:10rpx;">
+        <radio-group class="radio-group radio-group-new" bindchange="radioChange" style="font-size:31rpx;padding-top:10rpx;">
           <label class="radio" wx:for="{{route}}">
             <radio value="{{item.name}}" checked="{{item.checked}}" class="radio"/>{{item.value}}
             </label>

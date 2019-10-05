@@ -1,0 +1,6 @@
+.tishi{
+  height: 30px;
+  padding-top: 36rpx;
+  font-weight: lighter;
+  font-size: 30rpx;
+}

@@ -6,12 +6,17 @@
     <view class='choose'>出发地： <input name='start_address'></input></view>
     <view class='choose'>目的地： <input name='end_address'></input></view>
     <view class='choose'>联系电话： <input name='phone'></input></view>
+    <view class='tishi'>选择出发时间和空位</view>
     <view class='choose'>
       <picker range='{{seat_num}}' value="{{seek_customer.seats_number}}" name='seats_number'>
         剩余空位：
       </picker>
     </view>
-    <view class='choose'>出发时间： <input name='start_time' placeholder="具体日期时间"></input></view>
+    <view class='choose'>
+      <picker mode="multiSelector" range="{{multiArray}}" name='start_time'>
+        出发时间：
+      </picker>
+    </view>
   </view>
   <view style="height:60px;"></view>
   <button form-type='submit' type='primary'>提 交</button> 

@@ -41,5 +41,5 @@ page{
   height: 60%;
   display: flex;
   justify-content: center;
-  font-size: 0.8em;
+  font-size: 30rpx;
 }

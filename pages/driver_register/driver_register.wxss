@@ -20,8 +20,8 @@
   width: 60rpx;
 }
 text{
-  padding-top: 10px;
-  font-size: 0.7em;
+  padding-top: 20rpx;
+  font-size: 28rpx;
 }
 
 .topTabSwiper{ zoom: 1;background: white;}

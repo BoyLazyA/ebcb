@@ -24,7 +24,7 @@
         <view class='position phone'>需求名称</view>
         <view class="class phone">
           <image class="driver_phone_img" src="../../img/phone.png"></image>
-          <text style="font-size:0.8em;">156983373359</text>
+          <text style="font-size:30rpx;">156983373359</text>
         </view>
       </view>
     </view>

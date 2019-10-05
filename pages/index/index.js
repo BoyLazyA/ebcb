@@ -43,7 +43,11 @@ Page({
     }
 
   },
-
+  gotoconnect:function(e){
+    wx.navigateTo({
+      url: '../driver_details/driver_details',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

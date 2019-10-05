@@ -62,7 +62,7 @@
 .date{
   width: 60%;
   height: 100%;
-  font-size: 0.8em;
+  font-size: 30rpx;
   padding-top: 15rpx;
 }
 
