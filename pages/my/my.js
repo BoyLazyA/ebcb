@@ -5,11 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    chooseArr: ["车主认证", "我的收藏","客服&反馈"],
-    nikename: '未登录',
+    chooseArr: ["车主认证", "我的收藏","客服&反馈"],    nikename: '未登录',
     src: '',
   },
-  intodriver_register: function (e) {
+  intodriver_register: function(e) {
     switch (e.currentTarget.dataset.current) {
       case '车主认证':
         wx.navigateTo({
@@ -26,19 +25,35 @@ Page({
           url: '../connect/connect',
         });
         break;
-    } 
+    }
   },
-  getMyInfo: function (e) {
+  getMyInfo: function(e) {
     let info = e.detail.userInfo;
-    console.log(info)
-    this.setData({
-      isLogin: true,
-      src: info.avatarUrl,
-      nickname: info.nickName
+    wx.login({
+      success: res => {
+        info["code"] = res.code;
+        wx.request({
+          url: 'http://localhost:8080/user/login',
+          data: info,
+          method: 'POST',
+          dataType: "json",
+          header: {
+            'content-type': 'application/json;charset=utf-8'
+          },
+          success: res => {
+            console.log(res);
+          }
+        })
+      }
     })
-    this.getMyFavorites();
+    // this.setData({
+    //   isLogin: true,
+    //   src: info.avatarUrl,
+    //   nickname: info.nickName
+    // })
+    // this.getMyFavorites();
   },
-  getMyFavorites: function () {
+  getMyFavorites: function() {
     let info = wx.getStorageInfoSync();
     let keys = info.keys;
     let num = keys.length;
@@ -55,7 +70,7 @@ Page({
     })
   },
 
-  gotodetails: function (e) {
+  gotodetails: function(e) {
     let id = e.currentTarget.dataset.id;
     wx.navigateTo({
       url: '../news/news?id=' + id,
@@ -64,56 +79,56 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
 
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })
