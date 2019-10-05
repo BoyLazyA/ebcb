@@ -1,0 +1,4 @@
+/* pages/connect/connect.wxss */
+page{
+  background: white;
+}

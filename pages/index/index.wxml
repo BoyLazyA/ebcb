@@ -60,7 +60,7 @@
               <text style="color:rgb(255,0,0);font-size:1em;">终点</text>
                ：{{per.end_address}}
             </view>
-            <view class="right"><view class="confirm">未认证</view></view>
+            <view class="right"><view class="confirm">已认证</view></view>
           </view>
           <view style="height:2rpx;background:rgb(240, 240, 240);"></view>
           <view class='third_part'>

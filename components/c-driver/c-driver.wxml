@@ -1,21 +1,21 @@
 <!--components/c-driver/c-driver.wxml-->
-<view class="driver" bind:tap="bindturn">
+<view class="driver">
   <view class="top">
-    <view class="driver_img">
+    <view class="driver_img" bind:tap="bindturn">
       <image class="d_img" src="{{driver_img}}"></image>
     </view>
     <view class="driver_body">
-      <view class="driver_name class">{{name}}</view>
-      <view class="class">
+      <view class="driver_name class" bind:tap="bindturn">{{name}}</view>
+      <view class="class" bind:tap="bindturn">
         <image class="driver_phone_img" src="../../img/phone.png"></image>
         <text style="font-size:0.8em;">{{phone}}</text>
       </view> 
     </view>
-    <view class="connect">
-      <image class="connect_img" src="../../img/connect3.png"></image>
+    <view class="connect" bind:tap="callphone">
+      <image class="connect_img" src="../../img/call.png"></image>
     </view>
   </view>
-  <view class="bottom">
+  <view class="bottom" bind:tap="bindturn">
     <view class="address">
       <view class="address_img"><image class="add_img" src="../../img/gis.png"></image></view>
       <text class="content">{{address}}</text>

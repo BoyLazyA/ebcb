@@ -24,6 +24,9 @@ Component({
     },
     toshare(){
       this.triggerEvent('toshare',{},{})
+    },
+    callphone(){
+      this.triggerEvent('callphone',{},{})
     }
   }
 })

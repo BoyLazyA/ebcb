@@ -6,15 +6,7 @@ Page({
    */
   data: {
     seat_num:[1,2,3,4,5,6,7],
-    seek_customer:{
-      phone:'',
-      start_address:'',
-      end_address:'',
-      seats_number:0,
-      remarks:'',
-      start_time:['','','']
-    },
-    multiArray: [["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"], ["1日", "2日", "3日", "4日", "5日", "6日", "7日", "8日", "9日", "10日", "11日", "12日", "13日", "14日", "15日", "16日", "17日", "18日", "19日", "20日", "21日", "22日", "23日", "24日", "25日", "26日", "27日", "28日", "29日", "30日", "31日"],["早上","中午","下午"]]
+    confirm:'1',
   },
   save: function(e){
     console.log(e.detail.value)
@@ -23,7 +15,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    if(this.data.confirm == '1'){
 
+    }else{
+      wx.showModal({
+        title: '提示',
+        content: '没有进行认证的不能发布',
+        showCancel: false,
+        success: function (res) {
+          wx.navigateBack({})
+        }
+      })
+    }
+    
   },
 
   /**

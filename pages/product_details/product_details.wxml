@@ -76,6 +76,6 @@
 </view>
 
 <view style="height:80rpx;"></view>
-<c-tabbar bind:addfavor="addfavorite" bind:toinform="toinform" bind:toshare="toshare" class="addfavor"/>
+<c-tabbar bind:callphone="callphone" bind:addfavor="addfavorite" bind:toinform="toinform" bind:toshare="toshare" class="addfavor"/>
 
 

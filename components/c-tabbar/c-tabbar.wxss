@@ -1,16 +1,4 @@
-.phone_img{
-  height: 75rpx;
-  width: 75rpx;
-  background: white;
-  display: flex;
-  position: fixed;
-  bottom: 120rpx;
-  right: 40rpx;
-}
-.call{
-  height: 100%;
-  width: 100%;
-}
+
 
 .tabbar{
   height: 75rpx;

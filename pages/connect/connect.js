@@ -1,15 +1,13 @@
-// pages/seek_customer/seek_customer.js
+// pages/connect/connect.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    seat_num: [1, 2, 3, 4, 5, 6, 7],
+
   },
-  save: function (e) {
-    console.log(e.detail.value)
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

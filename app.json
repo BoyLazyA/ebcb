@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
+    "pages/connect/connect",
     "pages/collect/collect",
     "pages/driver_details/driver_details",
     "pages/driver_register/driver_register",

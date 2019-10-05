@@ -35,6 +35,9 @@ Component({
   methods: {
     bindturn(){
       this.triggerEvent('pageturn',{},{})
+    },
+    callphone(){
+      this.triggerEvent('callphone',{},{})
     }
   }
 })

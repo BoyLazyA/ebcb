@@ -6,7 +6,7 @@
     <view id='car-list'>
     <view class='list-item'>
       <!-- <view class='list-item' wx:for="{{carlist}}" wx:for-item="car" wx:key="{{car.id}}"> -->
-      <c-driver bind:pageturn="turn" data-driver="{{driver}}"/>
+      <c-driver bind:pageturn="turn" data-driver="{{driver}}" bind:callphone="callphone"/>
     </view>
     </view>
   </swiper-item>

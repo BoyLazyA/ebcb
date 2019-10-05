@@ -30,8 +30,8 @@ page{
   padding-left: 10px;
 }
 .choose{
-  border-bottom: 0.5rpx dashed gray;
   display: flex;
   flex-direction: row;
-  padding: 13px 0px;
+  padding: 25rpx 10rpx;
+  background: white;
 }

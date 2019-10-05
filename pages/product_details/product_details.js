@@ -12,6 +12,11 @@ Page({
     four:''
 
   },
+  callphone: function () {
+    wx.makePhoneCall({
+      phoneNumber: '15983373359',
+    })
+  },
   previewimg:function(e){
     var current = e.currentTarget.dataset.src;
     console.log(e.currentTarget.dataset.src)

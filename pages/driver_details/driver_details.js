@@ -8,6 +8,11 @@ Page({
     sign:'1',
     swiperim: ["../../img/swiper.png", "../../img/swiper.png", "../../img/swiper.png", "../../img/swiper.png"],
   },
+  callphone:function(){
+    wx.makePhoneCall({
+      phoneNumber: '15983373359',
+    })
+  },
   addfavorite:function(){
     const mytab = this.selectComponent('.addfavor')
     mytab.setData({

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    chooseArr: ["车主认证", "我的收藏","反馈建议"],
+    chooseArr: ["车主认证", "我的收藏","客服&反馈"],
     nikename: '未登录',
     src: '',
   },
@@ -21,8 +21,10 @@ Page({
           url: '../collect/collect',
         });
         break;
-      case '反馈建议':
-        console.log("反馈建议");
+      case '客服&反馈':
+        wx.navigateTo({
+          url: '../connect/connect',
+        });
         break;
     } 
   },

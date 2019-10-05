@@ -16,7 +16,6 @@
 }
 .step_img{
   float: left; 
-  
   height: 50rpx;
   width: 60rpx;
 }
@@ -25,15 +24,11 @@ text{
   font-size: 0.7em;
 }
 
-.topTabSwiper{ zoom: 1;}
+.topTabSwiper{ zoom: 1;background: white;}
 .topTabSwiper:after{content: ""; clear: both;display: block;}
 .tabBorer{border-bottom: 1px solid rgb(18, 150, 219); color: rgb(18, 150, 219);}
 .swiper2{width: 100%;}
 
-
-page{
-  background: rgb(246, 248, 248);
-}
 
 .all_choose{
   width: 750rpx;
@@ -71,8 +66,24 @@ page{
 }
 
 .choose_new{
-  border-bottom: 0.5rpx dashed gray;
   display: flex;
   flex-direction: column;
   padding: 25rpx 0px;
+  font-size: 0.9em;
+}
+.radio-group-new{
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.radio{
+  padding: 0rpx 0 10rpx 25rpx;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+}
+.btn{
+  width: 50%;
 }

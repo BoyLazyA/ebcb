@@ -17,6 +17,11 @@ Page({
     wx.navigateTo({
       url: '../driver_details/driver_details',
     });
+  }, 
+  callphone: function () {
+    wx.makePhoneCall({
+      phoneNumber: '15983373359',
+    })
   },
   /**
    * 生命周期函数--监听页面加载

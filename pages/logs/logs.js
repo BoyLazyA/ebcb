@@ -15,6 +15,11 @@ Page({
       url: '../driver_details/driver_details',
     });
   },
+  callphone:function(){
+    wx.makePhoneCall({
+      phoneNumber: '15983373359',
+    })
+  },
   handleitemclick(event) {
     console.log(event)
     this.setData({

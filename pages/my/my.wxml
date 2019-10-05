@@ -6,7 +6,6 @@
   <button wx:else open-type='getUserInfo' bindgetuserinfo='getMyInfo'>未登录，点此登录</button> 
 </view>
 
-
 <block wx:for="{{chooseArr}}" wx:key="{{index}}">
   <view class='flex-wrp-row item' bindtap='intodriver_register' data-current="{{item}}">
     <view class='item-left flex-wrp-row'>

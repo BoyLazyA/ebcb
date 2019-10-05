@@ -12,6 +12,10 @@ Page({
       id_front: '',
       id_reverse: ''
     }],
+    driver_sex:[
+      { name: 'male', value: '男', checked: 'true' },
+      { name: 'female', value: '女' },
+    ],
     car_type_items: [
       { name: 'small_car', value: '小车', checked: 'true' },
       { name: 'big_car', value: '其他车型' }
@@ -21,6 +25,11 @@ Page({
       { name: 'leshan', value: '乐山往返峨边'},
       { name: 'other', value: '其他'}
     ]
+  },
+  numSteps() {
+    this.setData({
+      num: this.data.num == this.data.numList.length - 1 ? 0 : this.data.num + 1
+    })
   },
   chooseimg: function (e) {
     switch(e.currentTarget.dataset.current){

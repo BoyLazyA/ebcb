@@ -20,7 +20,7 @@
   padding: 18rpx 0 0 13rpx;
 }
 .d_img{
-  width: 70%;
+  width: 60%;
   height: 70%;
   border-radius: 40rpx;
 }
@@ -43,12 +43,12 @@
 }
 .connect{
   height: 100%;
-  width: 15%;
+  width: 25%;
 }
 .connect_img{
   padding-top: 30rpx;
-  width: 60%;
-  height: 60%;
+  width: 47%;
+  height: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
