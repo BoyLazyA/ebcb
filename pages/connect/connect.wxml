@@ -1,2 +1,18 @@
 <!--pages/connect/connect.wxml-->
-<view></view>
+<form bindsubmit="feedback">
+  <view class='requaire_new'>填写反馈问题标题</view>
+  <view class='choose_new'>标题： <input name='issue_title'></input></view>
+  <view class='requaire_new'>选择问题类别</view>
+  <view class='choose_new'>
+    <picker range='{{issue_type}}' bindchange="bindPickerChange" value="{{index}}" name='issue_type'>
+      问题类别 ：{{issue_type[index]}}
+    </picker>
+  </view>
+  <view class='requaire_new'>反馈内容</view>
+  <textarea  class='remark' name='issue_content'></textarea>
+  <view class="bottom">
+    <button class="btn serve" open-type="contact" session-from="weapp">人工客服</button>
+    <button form-type='submit' type='primary' class="btn">提 交</button> 
+  </view>
+  
+</form>

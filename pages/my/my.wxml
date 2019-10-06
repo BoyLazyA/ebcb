@@ -3,7 +3,7 @@
     <image id='myicon' src='{{src}}'></image>
     <text id='nickname'>{{nickname}}</text>
   </block>
-  <button wx:else open-type='getUserInfo' bindgetuserinfo='getMyInfo'>未登录，点此登录</button> 
+  <button wx:else open-type='getUserInfo' bindgetuserinfo='getMyInfo'>未登录，点此登录</button>
 </view>
 
 <block wx:for="{{chooseArr}}" wx:key="{{index}}">

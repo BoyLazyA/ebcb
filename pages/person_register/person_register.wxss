@@ -1,0 +1,53 @@
+
+.choose_style{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.choose_item{
+  background: white;
+  width: 50%;
+  height: 300rpx;
+  margin: 30rpx;
+  border-radius: 15px;
+}
+.choose_img{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_style{
+  width: 60%;
+  height: 60%;
+}
+.choose_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+}
+
+.choose_new{
+  display: flex;
+  flex-direction: column;
+  padding: 25rpx 0px;
+  font-size: 0.9em;
+}
+.radio-group-new{
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.radio{
+  padding: 0rpx 0 10rpx 25rpx;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+}
+.btn{
+  width: 50%;
+}

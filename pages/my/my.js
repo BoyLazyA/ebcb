@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    chooseArr: ["车主认证", "我的收藏","客服&反馈"],    nikename: '未登录',
+    isLogin: false,
+    chooseArr: ["车主认证","个人认证", "我的收藏","客服&反馈"],    
+    nickname: '未登录',
     src: '',
   },
   intodriver_register: function(e) {
@@ -13,6 +15,11 @@ Page({
       case '车主认证':
         wx.navigateTo({
           url: '../driver_register/driver_register',
+        });
+        break;
+      case '个人认证':
+        wx.navigateTo({
+          url: '../person_register/person_register',
         });
         break;
       case '我的收藏':
@@ -29,6 +36,7 @@ Page({
   },
   getMyInfo: function(e) {
     let info = e.detail.userInfo;
+    let that = this;
     wx.login({
       success: res => {
         info["code"] = res.code;
@@ -41,10 +49,18 @@ Page({
             'content-type': 'application/json;charset=utf-8'
           },
           success: res => {
-            console.log(res);
+            wx.setStorageSync("info", res.data.data);
+            that.setData({
+              isLogin: true,
+              nickname: res.data.data.nickName,
+              src:res.data.data.avatarImg
+            })
+            wx.setStorageSync('openid', res.data.data.openId);
           }
         })
+        
       }
+      
     })
     // this.setData({
     //   isLogin: true,
@@ -80,6 +96,15 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    let info = wx.getStorageSync("info");
+    if(info){
+      this.setData({
+        isLogin: true,
+        nickname: info.nickName,
+        src: info.avatarImg
+      })
+    }
+    console.log(info)
 
   },
 

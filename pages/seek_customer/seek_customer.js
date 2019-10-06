@@ -7,10 +7,22 @@ Page({
   data: {
     seat_num:[1,2,3,4,5,6,7],
     confirm:'1',
+    index:0,
+    multiIndex: [0, 0],
     multiArray: [["1日", "2日", "3日", "4日", "5日", "6日", "7日", "8日", "9日", "10日", "11日", "12日", "13日", "14日", "15日", "16日", "17日", "18日", "19日", "20日", "21日", "22日", "23日", "24日", "25日", "26日", "27日", "28日", "29日", "30日", "31日"], ["06:00", "08:00", "10:00","12:00","14:00","16:00","18:00","20:00"]]
   },
   save: function(e){
     console.log(e.detail.value)
+  },
+  bindPickerChange: function (e) {
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  bindMultiPickerChange: function (e) {
+    this.setData({
+      multiIndex: e.detail.value
+    })
   },
   /**
    * 生命周期函数--监听页面加载

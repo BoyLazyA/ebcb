@@ -1,4 +1,29 @@
 /* pages/connect/connect.wxss */
-page{
+.requaire_new{
+  height: 60rpx;
+  padding-top: 14rpx;
+  margin-left: 10rpx;
+  font-weight: lighter;
+  font-size: 30rpx;
+}
+
+.choose_new{
+  display: flex;
+  flex-direction: row;
+  padding: 15rpx 10rpx;
   background: white;
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0rpx;
+  height: 80rpx;
+  width: 750rpx;
+}
+.serve{
+  background: orange;
+}
+.btn{
+  width: 50%;
 }

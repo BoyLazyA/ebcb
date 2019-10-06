@@ -8,13 +8,13 @@
     <view class='choose'>联系电话： <input name='phone'></input></view>
     <view class='tishi'>选择出发时间和空位</view>
     <view class='choose'>
-      <picker range='{{seat_num}}' value="{{seek_customer.seats_number}}" name='seats_number'>
-        同行人数：
+      <picker range='{{seat_num}}' bindchange="bindPickerChange" value="{{index}}" value="{{seek_customer.seats_number}}" name='seats_number'>
+        同行人数：{{seat_num[index]}}
       </picker>
     </view>
     <view class='choose'>
-      <picker mode="multiSelector" range="{{multiArray}}" name='start_time'>
-        出发时间：
+      <picker mode="multiSelector" range="{{multiArray}}" bindchange="bindMultiPickerChange" value="{{multiIndex}}" name='start_time'>
+        出发时间：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
       </picker>
     </view>
   </view>
