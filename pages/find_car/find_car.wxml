@@ -1,4 +1,4 @@
-<form bindsubmit="save">
+<form bindsubmit="feedback">
   <view class='requaire'>备注要求</view>
   <textarea placeholder='选填(如一些要求或者必要说明和提醒，字数15字以下）' class='remark' name='remarks'></textarea>
   <view class='requaire'>填写乘车拼车信息</view>
@@ -8,7 +8,7 @@
     <view class='choose'>联系电话： <input name='phone'></input></view>
     <view class='tishi'>选择出发时间和空位</view>
     <view class='choose'>
-      <picker range='{{seat_num}}' bindchange="bindPickerChange" value="{{index}}" value="{{seek_customer.seats_number}}" name='seats_number'>
+      <picker range='{{seat_num}}' bindchange="bindPickerChange" value="{{index}}" name='seats_number'>
         同行人数：{{seat_num[index]}}
       </picker>
     </view>

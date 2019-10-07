@@ -8,7 +8,7 @@
     <view class='choose'>联系电话： <input name='phone'></input></view>
     <view class='tishi'>选择出发时间和空位</view>
     <view class='choose'>
-      <picker range='{{seat_num}}' bindchange="bindPickerChange" value="{{index}}" value="{{seek_customer.seats_number}}" name='seats_number'>
+      <picker range='{{seat_num}}' bindchange="bindPickerChange" value="{{index}}" name='seats_number'>
         剩余空位：{{seat_num[index]}}
       </picker>
     </view>
