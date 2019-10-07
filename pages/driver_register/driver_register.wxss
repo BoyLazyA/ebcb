@@ -55,8 +55,8 @@ text{
   align-items: center;
 }
 .img_style{
-  width: 60%;
-  height: 60%;
+  width: 75%;
+  height: 75%;
 }
 .choose_text{
   display: flex;

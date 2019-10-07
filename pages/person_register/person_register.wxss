@@ -1,4 +1,9 @@
-
+.remind{
+  float: left; 
+  width: 100%;
+  text-align: center;
+  padding: 10rpx 0;
+}
 .choose_style{
   width: 100%;
   display: flex;
@@ -19,8 +24,8 @@
   align-items: center;
 }
 .img_style{
-  width: 60%;
-  height: 60%;
+  width: 75%;
+  height: 75%;
 }
 .choose_text{
   display: flex;
@@ -28,26 +33,22 @@
   align-items: center;
   height: 20%;
 }
-
-.choose_new{
-  display: flex;
-  flex-direction: column;
-  padding: 25rpx 0px;
-  font-size: 0.9em;
-}
-.radio-group-new{
-  display: flex;
-  flex-direction: column;
-  background: white;
-}
-.radio{
-  padding: 0rpx 0 10rpx 25rpx;
-}
-.button{
+.bottom{
   display: flex;
   flex-direction: row;
+  position: fixed;
+  bottom: 0rpx;
+  height: 80rpx;
   width: 750rpx;
+}
+.serve{
+  background: orange;
 }
 .btn{
   width: 50%;
 }
+.route_item{
+  display: flex;
+  flex-direction: row;
+}
+

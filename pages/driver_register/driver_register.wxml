@@ -1,6 +1,6 @@
 <view class="remind" style="font-size:31rpx; color:red;">您的信息仅用于平台审核</view>
 
-<form bindsubmit="register">
+<form bindsubmit="feedback">
   <view class='topTabSwiper'>
     <view class='tab tabBorer' >
       <image src="../../img/step1.png" class="step_img"></image>
@@ -23,10 +23,9 @@
       <view class='choose'>手机号码： <input name='driver_phone'></input></view>
       <view style="height:2rpx;"></view>
       <view class='choose'>车主性别：
-        <radio-group class="radio-group" bindchange="radioChange">
-          <label class="radio" wx:for="{{driver_sex}}">
-            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-            </label>
+        <radio-group class="radio-group" bindchange="radio1Change">
+          <radio value="男" checked="{{true}}" name="driver_sex"/>男
+          <radio value="女" checked="{{false}}" name="driver_sex"/>女
         </radio-group>
       </view>
       <view style="height:2rpx;"></view>
@@ -40,21 +39,26 @@
       <view style="height:2rpx;"></view>
       <view class='choose'>汽车颜色： <input name='car_color'></input></view>
       <view style="height:2rpx;"></view>
-      <view class='choose'>车辆注册日期： <input name='car_date'></input></view>
+      <view class='choose'>初次领驾照时间： <input name='driver_register_date'></input></view>
       <view style="height:2rpx;"></view>
       <view class='choose'>汽车车型：
-        <radio-group class="radio-group" bindchange="radioChange">
-          <label class="radio" wx:for="{{car_type_items}}">
-            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-            </label>
+        <radio-group class="radio-group" bindchange="radio2Change">
+          <radio value="小车" checked="{{true}}" name="car_type"/>小车
+          <radio value="其他车型" checked="{{false}}" name="car_type"/>其他车型
         </radio-group>
       </view>
       <view style="height:20rpx;"></view>
       <view class='choose_new'>常跑路线：
-        <radio-group class="radio-group radio-group-new" bindchange="radioChange" style="font-size:31rpx;padding-top:10rpx;">
-          <label class="radio" wx:for="{{route}}">
-            <radio value="{{item.name}}" checked="{{item.checked}}" class="radio"/>{{item.value}}
-            </label>
+        <radio-group class="radio-group radio-group-new" bindchange="radio3Change" style="font-size:31rpx;padding-top:10rpx;">
+         <view class="route_item">
+          <radio value="成都往返峨边" checked="{{true}}" name="route" class="radio"/>成都往返峨边
+         </view>
+         <view class="route_item">
+          <radio value="乐山往返峨边" checked="{{false}}" name="route" class="radio"/>乐山往返峨边
+         </view>
+         <view class="route_item">
+          <radio value="其他" checked="{{false}}" name="route" class="radio"/>其他
+         </view>
         </radio-group>
       </view>
       <view style="height:40px;"></view>

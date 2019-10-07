@@ -104,7 +104,6 @@ Page({
         src: info.avatarImg
       })
     }
-    console.log(info)
 
   },
 

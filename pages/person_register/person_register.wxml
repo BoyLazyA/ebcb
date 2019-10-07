@@ -1,26 +1,39 @@
 <!--pages/person_register/person_register.wxml-->
-<form>
+<view class="remind" style="font-size:31rpx; color:red;">您的信息仅用于平台审核</view>
+<form bindsubmit="feedback">
+  <view style="padding:20rpx 0 10rpx 15rpx;font-size:31rpx;font-weight:lighter;">请填写个人信息</view>
   <view class='choose'>车主姓名：
-    <input name='driver_name'></input>
+    <input name='person_name'></input>
   </view>
   <view style="height:2rpx;"></view>
   <view class='choose'>手机号码：
-    <input name='driver_phone'></input>
+    <input name='person_phone'></input>
   </view>
   <view style="height:2rpx;"></view>
-
-  <view class='choose_item' bind:tap="chooseimg" data-current="3">
-    <view class='choose_text'>身份证（正面）</view>
-    <view class='choose_img'>
-      <image wx:if="{{tempFilePaths[0].id_front == ''}}" src='../../img/add.png' class='img_style'></image>
-      <image wx:else class='img_style' src="{{tempFilePaths[0].id_front}}"></image>
+  <view class='choose'>联系地址：
+    <input name='person_address'></input>
+  </view>
+  <view style="height:2rpx;"></view>
+  <view style="padding:20rpx 0 10rpx 15rpx;font-size:31rpx;font-weight:lighter;">请上传身份证</view>
+  <view class="choose_style">
+    <view class='choose_item' bind:tap="chooseimg" data-current="1">
+      <view class='choose_text'>身份证（正面）</view>
+      <view class='choose_img'>
+        <image wx:if="{{tempFilePaths[0].id_front == ''}}" src='../../img/add.png' class='img_style'></image>
+        <image wx:else class='img_style' src="{{tempFilePaths[0].id_front}}"></image>
+      </view>
+    </view>
+    <view class='choose_item' bind:tap="chooseimg" data-current="2">
+      <view class='choose_text'>身份证（反面）</view>
+      <view class='choose_img'>
+        <image wx:if="{{tempFilePaths[0].id_reverse == ''}}" src='../../img/add.png' class='img_style'></image>
+        <image wx:else class='img_style' src="{{tempFilePaths[0].id_reverse}}"></image>
+      </view>
     </view>
   </view>
-  <view class='choose_item' bind:tap="chooseimg" data-current="4">
-    <view class='choose_text'>身份证（反面）</view>
-    <view class='choose_img'>
-      <image wx:if="{{tempFilePaths[0].id_reverse == ''}}" src='../../img/add.png' class='img_style'></image>
-      <image wx:else class='img_style' src="{{tempFilePaths[0].id_reverse}}"></image>
-    </view>
+
+  <view class="bottom">
+    <button class="btn serve" bindtap="comeback">返回</button>
+    <button form-type='submit' type='primary' class="btn">提 交</button> 
   </view>
 </form>
