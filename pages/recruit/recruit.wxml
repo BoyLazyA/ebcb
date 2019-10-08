@@ -26,7 +26,9 @@
           <image class="driver_phone_img" src="../../img/phone.png"></image>
           <text style="font-size:30rpx;">156983373359</text>
         </view>
+        
       </view>
+      <view class="declare_date">2019-10-12</view>
     </view>
     <view class='skill'>技能或经验：青年是时代的晴雨表，也是国家发展建设的生力军。进入新时代，“实力爱国”的中国青年一定是中华民族生气勃发、</view>
   </swiper-item>

@@ -63,7 +63,7 @@
   height: 90rpx;
 }
 .seeker_information{
-  width: 75%;
+  width: 45%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -86,4 +86,9 @@
   width: 720rpx;
   padding: 15rpx 10rpx 15rpx 20rpx;
   background: white;
+}
+.declare_date{
+  width: 30%;
+  font-size: 28rpx;
+
 }

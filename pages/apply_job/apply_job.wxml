@@ -1,4 +1,4 @@
-<form bindsubmit="save">
+<form bindsubmit="feedback">
   <view class='requaire'>填写个人需求信息</view>
   <view class='fillin'>
     <view class='choose'>需求主题名称： <input name='title'></input></view>

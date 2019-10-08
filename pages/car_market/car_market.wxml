@@ -1,11 +1,11 @@
-<form bindsubmit="save">
+<form bindsubmit="feedback">
   <view class='requaire'>填写二手车信息</view>
   <view class='fillin'>
     <view class='choose'>车型： <input name='car_type'></input></view>
     <view class='choose'>购买日期： <input name='buy_date'></input></view>
-    <view class='choose'>表显里程： <input name='buy_date'></input></view>
-    <view class='choose'>发动机状态： <input name='buy_date'></input></view>
-    <view class='choose'>内饰状态： <input name='buy_date'></input></view>
+    <view class='choose'>表显里程： <input name='mileage'></input></view>
+    <view class='choose'>发动机状态： <input name='motor_state'></input></view>
+    <view class='choose'>内饰状态： <input name='decorate_state'></input></view>
     <view class='choose'>售价： <input name='price'></input></view>
     <view class='choose'>地址： <input name='car_address' placeholder="填写看车在地址"></input></view>
     <view class='choose'>联系电话： <input name='phone'></input></view>

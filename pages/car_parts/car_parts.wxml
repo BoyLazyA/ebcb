@@ -1,4 +1,4 @@
-<form bindsubmit="save">
+<form bindsubmit="feedback">
   <view class='requaire'>填写车零部件信息</view>
   <view class='fillin'>
     <view class='choose'>零件名称： <input name='part_name'></input></view>
