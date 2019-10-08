@@ -19,6 +19,11 @@ Page({
       isAdd:mytab.data.isAdd + 1
     })
   },
+  tochat:function(){
+    wx.navigateTo({
+      url: '../tochat/tochat',
+    })
+  },
   toinform:function(){
     console.log("举报")
   },

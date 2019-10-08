@@ -1,5 +1,12 @@
-
-
+.call_img{
+  position: fixed;
+  bottom: 120rpx;
+  right: 30rpx;
+}
+.call{
+  height: 75rpx;
+  width: 75rpx;
+}
 .tabbar{
   height: 75rpx;
   width: 750rpx;

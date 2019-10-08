@@ -27,6 +27,9 @@ Component({
     },
     callphone(){
       this.triggerEvent('callphone',{},{})
+    },
+    tochat(){
+      this.triggerEvent('tochat',{},{})
     }
   }
 })

@@ -1,5 +1,7 @@
 <!--components/c-tabbar/c-tabbar.wxml-->
-
+<view class="call_img" bind:tap="callphone">
+  <image src="../../img/call.png" class="call"></image>
+</view>
 <view class="tabbar">
   <view class="left item" bind:tap="toinform">
     <view class="tb">
@@ -20,5 +22,5 @@
     </view>
     <text>收藏</text>
   </view>
-  <view class="right item" bind:tap="callphone">联系ta</view>
+  <view class="right item" bind:tap="tochat">联系ta</view>
 </view>

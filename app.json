@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
+    "pages/tochat/tochat",
     "pages/person_register/person_register",
     "pages/connect/connect",
     "pages/collect/collect",
